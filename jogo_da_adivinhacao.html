@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tente adivinhar o número!</title>
+</head>
+
+<body>
+    <script>
+        let numeroAleatorio = Math.random() * 10;
+        let numeroAleatorioInteiro = Math.round(numeroAleatorio);
+
+        let resposta = prompt("Vamos jogar um jogo! Eu vou pensar em um número, e você deve adivinhar qual é o número. Digite o seu chute na caixa abaixo:")
+        if (resposta == numeroAleatorioInteiro) {
+            document.write("Você acertou! O número que eu pensei foi: " + numeroAleatorioInteiro + ".")
+        } else {
+            document.write("Uma pena, você errou. O número que eu pensei era " + numeroAleatorioInteiro + ".")
+        }
+    </script>
+</body>
+
+</html>
