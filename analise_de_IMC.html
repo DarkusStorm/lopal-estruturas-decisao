@@ -1,28 +1,31 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Análise de IMC</title>
 </head>
+
 <body>
     <script>
         let altura = prompt("Olá! Qual é a sua altura em metros?");
         let peso = prompt("Qual o seu peso em quilogramas?");
         let IMC = peso / (altura * altura);
-        
+
         // Arredonda o IMC para apenas duas casas decimais.
         IMC = IMC.toFixed(2);
 
-        if (IMC >= 18.5 && IMC <= 35){
+        if (IMC >= 18.5 && IMC <= 35) {
             document.write("Parabéns! Seu IMC é " + IMC + ", que está dentro do normal.");
-        } else if (IMC < 18.5){
+        } else if (IMC < 18.5) {
             document.write("Uma pena, seu IMC é " + IMC + " e indica que você está abaixo do peso.");
-        } else if (IMC > 35){
+        } else if (IMC > 35) {
             document.write("Uma pena, seu IMC é " + IMC + " e indica que você está acima do peso.");
         } else {
             document.write("Resposta inválida.");
         }
     </script>
 </body>
+
 </html>
